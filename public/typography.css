@@ -1,0 +1,75 @@
+/* Headers */
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Porter Medium', 'Helvetic-Neue', Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 28px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/* Links */
+
+a {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* Callouts */
+
+em, .em {
+  font-family: 'Avenir Oblique', 'Helvetic-Neue', Helvetica, Arial, sans-serif;
+}
+
+strong, .strong {
+  font-family: 'Avenir Medium', 'Helvetic-Neue', Helvetica, Arial, sans-serif;
+}
+
+.small {
+  font-size: 13px;
+  color: #666C71;
+}
+
+/* Quotes */
+
+blockquote {
+  font-family: 'Avenir Oblique', 'Helvetic-Neue', Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  color: #666C71;
+  line-height: 24px;
+}
+
+blockquote > .citation {
+  font-size: 13px;
+}
+
+
+
+
+
+
+
+
+

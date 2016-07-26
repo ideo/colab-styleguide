@@ -1,0 +1,125 @@
+/* Custom Fonts */
+
+@font-face {
+  font-family: 'Porter Medium';
+  src: url('./../fonts/porter_medium-webfont.woff2') format('woff2'),
+       url('./../fonts/porter_medium-webfont.woff') format('woff')
+}
+
+@font-face {
+  font-family: 'Avenir Book';
+  src: url('./../fonts/AvenirLTPro-Book.otf') format('opentype')
+}
+
+@font-face {
+  font-family: 'Avenir Oblique';
+  src: url('./../fonts/AvenirLTPro-Oblique.otf') format('opentype')
+}
+
+@font-face {
+  font-family: 'Avenir Medium';
+  src: url('./../fonts/AvenirLTPro-Medium.otf') format('opentype')
+}
+
+/* CSS Reset */
+
+html:before {
+    display: none
+}
+
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+code,
+del,
+dfn,
+em,
+img,
+q,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+textarea,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+  line-height: 1.5em
+}
+html,
+body {
+  height: 100%;
+  min-height: 100%;
+  width: 100%
+}
+a,
+span {
+  line-height: inherit
+}
+ul {
+  list-style: none
+}
+body {
+  background-color: #fff;
+  color: #000033;
+  font-family: 'Avenir Book', 'Helvetic-Neue', Helvetica, Arial, sans-serif;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 0
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: ""
+}
+blockquote,
+q {
+  quotes: """"
+}

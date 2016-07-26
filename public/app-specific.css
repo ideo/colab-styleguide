@@ -1,0 +1,21 @@
+/* Note: */
+/* These styles are not part of the component library */
+/* They are specific to the actual styleguide app */
+/*  */
+
+.unit-sg {
+  background-color: #45CEBD;
+}
+
+.unit-sg--fill {
+  padding: 15px;
+  text-align: center;
+  background-color: #C9F1EC;
+  margin: 15px 0px;
+  max-width: 10000px;
+}
+
+.example-sg {
+  margin-bottom: 30px;
+  border-bottom: 1px dotted #45CEBD;
+}
