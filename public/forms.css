@@ -1,11 +1,19 @@
 /* Inputs */
-input {
-  -webkit-appearance: none;
-  font-size: 15px;
-  font-weight: 300;
+.field-wrap {
+  margin: 0;
+  clear: both;
+  position: relative;
+  overflow: visible;
 }
-::-moz-focus-inner {
-    border: 0
+
+label {
+  color: #484848;
+  display: block;
+  max-width: 635px;
+  padding-bottom: 10px;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none
 }
 
 textarea,
@@ -14,20 +22,18 @@ input[type="password"],
 input[type="number"],
 input[type="email"],
 input[type="search"] {
+  font-size: inherit;
   display: inline-block;
-  padding: 0 9px 0 9px;
-  margin-bottom: 30px;
-  vertical-align: middle;
-  border-radius: 2px;
+  background-color: #fff;
+  width: 100%;
   min-width: 50px;
   max-width: 625px;
-  width: 100%;
   min-height: 45px;
   line-height: 45px;
-  background-color: #fff;
   border: 2px solid #E0E0E0;
-  margin: 0 0 20px 0;
   border-radius: 5px;
+  padding: 0 9px 0 9px;
+  margin: 0 15px 20px 0;
 }
 
 textarea:hover,

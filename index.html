@@ -351,14 +351,20 @@
 
       <hr>
       <h4>Code: Text Inputs</h4>
-      <p>Text inputs use the <code>input</code> tag.</p>
+      <p>Text inputs use the <code>input</code> tag. Note the wrapping of the input field and the label within the <code>field-wrap</code> class.</p>
       <xmp class="code">
-  <input type="text" placeholder="Add your email" />
+  <div class="field-wrap">
+    <label for="">Email</label>
+    <input type="text" placeholder="Add your email" /><button>Submit</button>
+  </div>
       </xmp>
       <h4>What the above code does...</h4>
       <div class="line">
         <div class="unit size1of1">
-          <input type="text" placeholder="Add your email" />
+          <div class="field-wrap">
+            <label for="">Email</label>
+            <input type="text" placeholder="Add your email" /><button>Submit</button>
+          </div>
         </div>
       </div>
 
