@@ -3,6 +3,29 @@
 /* They are specific to the actual styleguide app */
 /*  */
 
+html, body {
+  /*margin-top: 80px;*/
+}
+
+hr {
+  border: 1px solid #EDF0F2;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+code, .code {
+  font-size: inherit;
+  white-space: pre-wrap;
+  background-color: transparent;
+  border-radius: 0;
+  font-family: "Courier New", monospace;
+  padding: 2px 4px 2px 4px;
+  font-size: 90%;
+  color: #c7254e;
+  background-color: #f9f2f4;
+  border-radius: 4px;
+}
+
 .unit-sg {
   background-color: #45CEBD;
 }
@@ -15,7 +38,26 @@
   max-width: 10000px;
 }
 
-.example-sg {
-  margin-bottom: 30px;
-  border-bottom: 1px dotted #45CEBD;
+.block-solid-fill {
+  height: 40px;
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 20px;
 }
+
+.u-align--center {
+  text-align: center;
+
+}
+
+.border--bottom {
+  border-bottom: 1px solid #efefef;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.divider-sg--v {
+  margin-bottom: 100px;
+  height: 1px;
+}
+

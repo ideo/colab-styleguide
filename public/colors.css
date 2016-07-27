@@ -1,0 +1,54 @@
+/* Brand Colors */
+.color-bg--coral {
+  color: #fff;
+  background-color: #F8AA9E;
+}
+
+.color-bg--teal {
+  color: #fff;
+  background-color: #96d5d2;
+}
+
+/* Neutral Colors */
+
+.color-bg--white {
+  color: #fff;
+  background-color: #f7f9fb;
+}
+
+.color-bg--lightgray {
+  color: #fff;
+  background-color: #EDF0F2;
+}
+
+.color-bg--darkgray {
+  color: #fff;
+  background-color: #666C71;
+}
+
+.color-bg--navy {
+  color: #fff;
+  background-color: #000033;
+}
+
+/* Utility Colors */
+
+.color-bg--cta {
+  color: #fff;
+  background-color: #00689e;
+}
+
+.color-bg--cta__subtle {
+  color: #fff;
+  background-color: #5cadce;
+}
+
+.color-bg--highlight {
+  color: #fff;
+  background-color: #f37021;
+}
+
+.color-bg--caution {
+  color: #fff;
+  background-color: #ffcb05;
+}

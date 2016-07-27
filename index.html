@@ -4,28 +4,380 @@
   <title>coLAB Styleguide</title>
 
   <link rel="stylesheet" href="public/base.css">
+  <link rel="stylesheet" href="public/colors.css">
+  <link rel="stylesheet" href="public/forms.css">
   <link rel="stylesheet" href="public/grid.css">
   <link rel="stylesheet" href="public/typography.css">
   <link rel="stylesheet" href="public/app-specific.css">
 </head>
 <body>
 
-  <h1>This is AAA</h1>
-  <h2>second level</h2>
-  <h3>third level</h3>
-  <h4>h4sd skdf </h4>
-  <h5>h5 sdkjfn</h5>
+  <div class="container">
 
-  <strong>skdfjndskjfn</strong>
+    <!-- GRIDS -->
 
-  <br><br>
+    <div class="line">
+      <h1 class="u-align--center">Grids</h1>
 
-  <em>sdjnfskdjfndsjk</em>
+      <hr>
+      <h4>1 Column</h4>
+      <div class="line">
+        <div class="lastUnit size1of1 unit-sg">
+          <p class="unit-sg--fill"><code>size1of1</code></p>
+        </div>
+      </div>
 
-  <blockquote>
-    sdlkfsdklm
-    <p class="citation">aksdjn</p>
-  </blockquote>
+      <hr>
+      <h4>2 Column</h4>
+      <div class="line">
+        <div class="unit size1of2 unit-sg">
+          <p class="unit-sg--fill"><code>size1of2</code></p>
+        </div>
+        <div class="lastUnit size1of2 unit-sg">
+          <p class="unit-sg--fill"><code>size1of2</code></p>
+        </div>
+      </div>
+
+      <hr>
+      <h4>3 Column</h4>
+      <div class="line">
+        <div class="unit size1of3 unit-sg">
+          <p class="unit-sg--fill"><code>size1of3</code></p>
+        </div>
+        <div class="unit size1of3 unit-sg">
+          <p class="unit-sg--fill"><code>size1of3</code></p>
+        </div>
+        <div class="lastUnit size1of3 unit-sg">
+          <p class="unit-sg--fill"><code>size1of3</code></p>
+        </div>
+      </div>
+
+      <hr>
+      <h4>4 Column</h4>
+      <div class="line">
+        <div class="unit size1of4 unit-sg">
+          <p class="unit-sg--fill"><code>size1of4</code></p>
+        </div>
+        <div class="unit size1of4 unit-sg">
+          <p class="unit-sg--fill"><code>size1of4</code></p>
+        </div>
+        <div class="unit size1of4 unit-sg">
+          <p class="unit-sg--fill"><code>size1of4</code></p>
+        </div>
+        <div class="lastUnit size1of4 unit-sg">
+          <p class="unit-sg--fill"><code>size1of4</code></p>
+        </div>
+      </div>
+
+      <hr>
+      <h4>8 Column</h4>
+      <div class="line">
+        <div class="unit size1of8 unit-sg">
+          <p class="unit-sg--fill"><code>size1of8</code></p>
+        </div>
+        <div class="unit size1of8 unit-sg">
+          <p class="unit-sg--fill"><code>size1of8</code></p>
+        </div>
+        <div class="unit size1of8 unit-sg">
+          <p class="unit-sg--fill"><code>size1of8</code></p>
+        </div>
+        <div class="unit size1of8 unit-sg">
+          <p class="unit-sg--fill"><code>size1of8</code></p>
+        </div>
+        <div class="unit size1of8 unit-sg">
+          <p class="unit-sg--fill"><code>size1of8</code></p>
+        </div>
+        <div class="unit size1of8 unit-sg">
+          <p class="unit-sg--fill"><code>size1of8</code></p>
+        </div>
+        <div class="unit size1of8 unit-sg">
+          <p class="unit-sg--fill"><code>size1of8</code></p>
+        </div>
+        <div class="lastUnit size1of8 unit-sg">
+          <p class="unit-sg--fill"><code>size1of8</code></p>
+        </div>
+      </div>
+
+      <hr>
+      <h4>Code: A Non-nested Grid</h4>
+      <p>This code snippet applies to any and all non-nested grids. Note how they are wrapped in a <code>line</code> tag, and that the first two <code>div</code>s have the <code>unit</code> class applied, while the last unit specifically has the <code>lastUnit</code> class applied. This handles padding for you.</p>
+      <xmp class="code">
+  <div class="line">
+    <div class="unit size1of3"></div>
+    <div class="unit size1of3"></div>
+    <div class="lastUnit size1of3"></div>
+  </div>
+      </xmp>
+      <h4>What the above code does...</h4>
+      <div class="lastGroup">
+        <div class="unit size1of3 unit-sg">
+          <p class="unit-sg--fill">Column 1 of 3</p>
+        </div>
+        <div class="unit size1of3 unit-sg">
+          <p class="unit-sg--fill">Column 1 of 3</p>
+        </div>
+        <div class="lastUnit size1of3 unit-sg">
+          <p class="unit-sg--fill">Column 1 of 3</p>
+        </div>
+      </div>
+
+      <hr>
+      <h4>Code: A Nested Grid</h4>
+      <p>This code snippet applies to nested grids. Nesting is accomplished using the <code>group</code> and <code>lastGroup</code> classes.</p>
+      <xmp class="code">
+  <div class="line">
+    <div class="unit size1of3">Column 1 of 3</div>
+    <div class="group size1of3">
+      <div class="unit size1of2">Nested in Column 2 of 3</div>
+      <div class="lastUnit size1of2">Nested in Column 2 of 3</div>
+    </div>
+    <div class="lastGroup size1of3">
+      <div class="unit size1of2">Nested in Column 3 of 3</div>
+      <div class="lastUnit size1of2">Nested in Column 3 of 3</div>
+    </div>
+  </div>
+      </xmp>
+      <h4>What the above code does...</h4>
+      <div class="line">
+        <div class="unit size1of3 unit-sg"><p class="unit-sg--fill">Column <br>1 of 3</p></div>
+        <div class="group size1of3 unit-sg">
+          <div class="unit size1of2 unit-sg"><p class="unit-sg--fill">Nested in Column 2 of 3</p></div>
+          <div class="lastUnit size1of2 unit-sg"><p class="unit-sg--fill">Nested in Column 2 of 3</p></div>
+        </div>
+        <div class="lastGroup size1of3 unit-sg">
+          <div class="unit size1of2 unit-sg"><p class="unit-sg--fill">Nested in Column 3 of 3</p></div>
+          <div class="lastUnit size1of2 unit-sg"><p class="unit-sg--fill">Nested in Column 3 of 3</p></div>
+        </div>
+      </div>
+    </div>
+    <div class="divider-sg--v"></div>
+    <!-- /GRIDS -->
+
+
+
+    <!-- TYPOGRAPHY -->
+    <div class="line">
+      <h1 class="u-align--center">Typography</h1>
+
+      <hr>
+      <div class="line border--bottom">
+        <div class="unit size1of2">
+          <code>h1</code>
+        </div>
+        <div class="lastUnit size1of2">
+          <h1>Header 1</h1>
+        </div>
+      </div>
+
+      <div class="line border--bottom">
+        <div class="unit size1of2">
+          <code>h2</code>
+        </div>
+        <div class="lastUnit size1of2">
+          <h2>Header 2</h2>
+        </div>
+      </div>
+
+      <div class="line border--bottom">
+        <div class="unit size1of2">
+          <code>h3</code>
+        </div>
+        <div class="lastUnit size1of2">
+          <h3>Header 3</h3>
+        </div>
+      </div>
+
+      <div class="line border--bottom">
+        <div class="unit size1of2">
+          <code>h4</code>
+        </div>
+        <div class="lastUnit size1of2">
+          <h4>Header 4</h4>
+        </div>
+      </div>
+
+      <div class="line border--bottom">
+        <div class="unit size1of2">
+          <code>h5</code>
+        </div>
+        <div class="lastUnit size1of2">
+          <h5>Header 5</h5>
+        </div>
+      </div>
+
+      <div class="line border--bottom">
+        <div class="unit size1of2">
+          <code>p</code>
+        </div>
+        <div class="lastUnit size1of2">
+          <p>This is general paragraph text. Its width will be contained by the max width of the containing element. Here is another line or two to understand line height here :)</p>
+        </div>
+      </div>
+
+      <div class="line border--bottom">
+        <div class="unit size1of2">
+          <code>a</code>
+        </div>
+        <div class="lastUnit size1of2">
+          <p><a href="">This is a simple text link</a> using the <code>a</code> tag.</p>
+        </div>
+      </div>
+
+      <div class="line border--bottom">
+        <div class="unit size1of2">
+          <code>strong</code>
+        </div>
+        <div class="lastUnit size1of2">
+          <p><strong>Here is an example of bold text</strong> using the <code>strong</code> tag.</p>
+        </div>
+      </div>
+
+      <div class="line border--bottom">
+        <div class="unit size1of2">
+          <code>em</code>
+        </div>
+        <div class="lastUnit size1of2">
+          <p><em>Here is an example of italicized text</em> using the <code>em</code> tag.</p>
+        </div>
+      </div>
+
+      <div class="line border--bottom">
+        <div class="unit size1of2">
+          <code>blockquote</code>
+        </div>
+        <div class="lastUnit size1of2">
+          <blockquote>
+            <p>"This is an important quote using the <code>blockquote</code> tag."</p>
+            <p class="citation">And this is the quote's citation using the <code>.citation</code> class</p>
+          </blockquote>
+        </div>
+      </div>
+
+      <div class="line border--bottom">
+        <div class="unit size1of2">
+          <code>.small</code> (class)
+        </div>
+        <div class="lastUnit size1of2">
+          <p><span class="small">Here is an example of some small text</span> using the <code>.small</code> class.</p>
+        </div>
+      </div>
+    </div>
+    <div class="divider-sg--v"></div>
+    <!-- /TYPOGRAPHY -->
+
+
+
+    <!-- COLORS -->
+    <div class="line">
+      <h1 class="u-align--center">Colors</h1>
+
+      <hr>
+      <h4>Brand Colors</h4>
+      <div class="line">
+        <div class="unit size1of4">
+          <div class="block-solid-fill color-bg--coral u-align--center"></div>
+          <code>.color-bg--coral</code>
+        </div>
+        <div class="unit size1of4">
+          <div class="block-solid-fill color-bg--teal u-align--center"></div>
+          <code>.color-bg--teal</code>
+        </div>
+      </div>
+
+      <hr>
+      <h4>Neutral Colors</h4>
+      <div class="line">
+        <div class="unit size1of4">
+          <div class="block-solid-fill color-bg--white u-align--center"></div>
+          <code>.color-bg--white</code>
+        </div>
+        <div class="unit size1of4">
+          <div class="block-solid-fill color-bg--lightgray u-align--center"></div>
+          <code>.color-bg--lightgray</code>
+        </div>
+        <div class="unit size1of4">
+          <div class="block-solid-fill color-bg--darkgray u-align--center"></div>
+          <code>.color-bg--darkgray</code>
+        </div>
+        <div class="lastUnit size1of4">
+          <div class="block-solid-fill color-bg--navy u-align--center"></div>
+          <code>.color-bg--navy</code>
+        </div>
+      </div>
+
+      <hr>
+      <h4>Utility Colors</h4>
+      <div class="line">
+        <div class="unit size1of4">
+          <div class="block-solid-fill color-bg--cta u-align--center"></div>
+          <code>.color-bg--cta</code>
+        </div>
+        <div class="unit size1of4">
+          <div class="block-solid-fill color-bg--cta__subtle u-align--center"></div>
+          <code>.color-bg--cta__subtle</code>
+        </div>
+        <div class="unit size1of4">
+          <div class="block-solid-fill color-bg--highlight u-align--center"></div>
+          <code>.color-bg--highlight</code>
+        </div>
+        <div class="lastUnit size1of4">
+          <div class="block-solid-fill color-bg--caution u-align--center"></div>
+          <code>.color-bg--caution</code>
+        </div>
+      </div>
+
+    </div>
+    <div class="divider-sg--v"></div>
+    <!-- /COLORS -->
+
+
+
+    <!-- FORMS -->
+    <div class="line">
+      <h1 class="u-align--center">Forms</h1>
+
+      <hr>
+      <h4>Code: Buttons</h4>
+      <p>Buttons use the <code>button</code> tag or <code>.button</code> class. Multiple button spacing is already handled in the css.</p>
+      <xmp class="code">
+  <button>Sign Up</button><button class="color-bg--cta__subtle">Secondary CTA</button>
+      </xmp>
+      <h4>What the above code does...</h4>
+      <div class="line">
+        <div class="unit size1of1">
+          <button>Sign Up</button><button class="color-bg--cta__subtle">Skip This</button>
+        </div>
+      </div>
+
+      <hr>
+      <h4>Code: Text Inputs</h4>
+      <p>Text inputs use the <code>input</code> tag.</p>
+      <xmp class="code">
+  <input type="text" placeholder="Add your email" />
+      </xmp>
+      <h4>What the above code does...</h4>
+      <div class="line">
+        <div class="unit size1of1">
+          <input type="text" placeholder="Add your email" />
+        </div>
+      </div>
+
+
+
+    </div>
+    <div class="divider-sg--v"></div>
+    <!-- /FORMS -->
+
+
+
+
+
+
+
+
+
+
+  </div>
 
 </body>
 </html>

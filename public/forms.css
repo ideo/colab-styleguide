@@ -1,0 +1,87 @@
+/* Inputs */
+input {
+  -webkit-appearance: none;
+  font-size: 15px;
+  font-weight: 300;
+}
+::-moz-focus-inner {
+    border: 0
+}
+
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="number"],
+input[type="email"],
+input[type="search"] {
+  display: inline-block;
+  padding: 0 9px 0 9px;
+  margin-bottom: 30px;
+  vertical-align: middle;
+  border-radius: 2px;
+  min-width: 50px;
+  max-width: 625px;
+  width: 100%;
+  min-height: 45px;
+  line-height: 45px;
+  background-color: #fff;
+  border: 2px solid #E0E0E0;
+  margin: 0 0 20px 0;
+  border-radius: 5px;
+}
+
+textarea:hover,
+input[type="text"]:hover,
+input[type="password"]:hover,
+input[type="number"]:hover,
+input[type="email"]:hover,
+input[type="search"]:hover {
+  border-color: #C1C1C1
+}
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="search"]:focus {
+  border: 2px solid #666C71;
+  outline: none
+}
+
+/* Buttons */
+
+button,
+.button {
+  font-family: 'Porter Medium', 'Helvetic-Neue', Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  white-space: nowrap;
+  overflow: hidden;
+  border: 0 none;
+  outline: 0;
+  cursor: pointer;
+
+  text-transform: uppercase;
+  padding: 0 22px;
+  border-radius: 5px;
+  display: inline-block;
+
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  vertical-align: middle;
+
+  background-color: #f37021;
+  color: #fff;
+}
+
+button + button,
+.button + .button {
+  margin-left: 15px;
+}
