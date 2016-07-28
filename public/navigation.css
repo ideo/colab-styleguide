@@ -22,8 +22,6 @@
 .main-nav li {
   font-family: 'Porter Medium', 'Helvetic-Neue', Helvetica, Arial, sans-serif;
   text-transform: uppercase;
-  padding-left: 35px;
-  padding-right: 35px;
   line-height: 72px;
   height: 72px;
   display: inline-block;
@@ -37,7 +35,11 @@
 }
 
 .main-nav-link {
+  display: inline-block;
   height: 100%;
+  width: 100%;
+  padding-left: 35px;
+  padding-right: 35px;
   color: #666C71;
   cursor: pointer;
   text-decoration: none;
