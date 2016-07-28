@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="public/forms.css">
   <link rel="stylesheet" href="public/grid.css">
   <link rel="stylesheet" href="public/icons.css">
+  <link rel="stylesheet" href="public/navigation.css">
   <link rel="stylesheet" href="public/typography.css">
   <link rel="stylesheet" href="public/app-specific.css">
 </head>
@@ -163,7 +164,7 @@
       <hr>
       <div class="line border--bottom">
         <div class="unit size1of2">
-          <code>h1</code>
+          The <code>h1</code> tag
         </div>
         <div class="lastUnit size1of2">
           <h1>Header 1</h1>
@@ -172,7 +173,7 @@
 
       <div class="line border--bottom">
         <div class="unit size1of2">
-          <code>h2</code>
+          The <code>h2</code> tag
         </div>
         <div class="lastUnit size1of2">
           <h2>Header 2</h2>
@@ -181,7 +182,7 @@
 
       <div class="line border--bottom">
         <div class="unit size1of2">
-          <code>h3</code>
+          The <code>h3</code> tag
         </div>
         <div class="lastUnit size1of2">
           <h3>Header 3</h3>
@@ -190,7 +191,7 @@
 
       <div class="line border--bottom">
         <div class="unit size1of2">
-          <code>h4</code>
+          The <code>h4</code> tag
         </div>
         <div class="lastUnit size1of2">
           <h4>Header 4</h4>
@@ -199,7 +200,7 @@
 
       <div class="line border--bottom">
         <div class="unit size1of2">
-          <code>h5</code>
+          The <code>h5</code> tag
         </div>
         <div class="lastUnit size1of2">
           <h5>Header 5</h5>
@@ -208,7 +209,7 @@
 
       <div class="line border--bottom">
         <div class="unit size1of2">
-          <code>p</code>
+          The <code>p</code> tag
         </div>
         <div class="lastUnit size1of2">
           <p>This is general paragraph text. Its width will be contained by the max width of the containing element. Here is another line or two to understand line height here :)</p>
@@ -217,49 +218,58 @@
 
       <div class="line border--bottom">
         <div class="unit size1of2">
-          <code>a</code>
+          The <code>a</code> tag
         </div>
         <div class="lastUnit size1of2">
-          <p><a href="">This is a simple text link</a> using the <code>a</code> tag.</p>
+          <p><a href="">This is a simple text link</a></p>
         </div>
       </div>
 
       <div class="line border--bottom">
         <div class="unit size1of2">
-          <code>strong</code>
+          The <code>a</code> tag with the <code>.small</code> class applied
         </div>
         <div class="lastUnit size1of2">
-          <p><strong>Here is an example of bold text</strong> using the <code>strong</code> tag.</p>
+          <p><a class="small" href="">This is a smaller text link</a></p>
         </div>
       </div>
 
       <div class="line border--bottom">
         <div class="unit size1of2">
-          <code>em</code>
+          The <code>strong</code> tag
         </div>
         <div class="lastUnit size1of2">
-          <p><em>Here is an example of italicized text</em> using the <code>em</code> tag.</p>
+          <p><strong>Here is an example of bold text.</strong></p>
         </div>
       </div>
 
       <div class="line border--bottom">
         <div class="unit size1of2">
-          <code>blockquote</code>
+          The <code>em</code> tag
+        </div>
+        <div class="lastUnit size1of2">
+          <p><em>Here is an example of italicized text.</em></p>
+        </div>
+      </div>
+
+      <div class="line border--bottom">
+        <div class="unit size1of2">
+          The <code>blockquote</code> tag
         </div>
         <div class="lastUnit size1of2">
           <blockquote>
-            <p>"This is an important quote using the <code>blockquote</code> tag."</p>
-            <p class="citation">And this is the quote's citation using the <code>.citation</code> class</p>
+            <p>"The processes by which civilization advances all but wreck the societies in which they occur."</p>
+            <p class="citation">This is the citation</p>
           </blockquote>
         </div>
       </div>
 
       <div class="line border--bottom">
         <div class="unit size1of2">
-          <code>.small</code> (class)
+          General text with <code>.small</code> class applied
         </div>
         <div class="lastUnit size1of2">
-          <p><span class="small">Here is an example of some small text</span> using the <code>.small</code> class.</p>
+          <p><span class="small">Here is an example of some small text.</span></p>
         </div>
       </div>
     </div>
@@ -429,32 +439,6 @@
         </div>
       </div>
 
-
-
-
-
-      <!-- <hr>
-      <h4>Code: Arrow Icons</h4>
-      <p>To handle small sizes, you only have access to the <code>.logo--small</code>class in conjunction with the <code>.icon-arrow--*</code> classes.</p>
-      <xmp class="code">
-  <icon class="logo logo--small logo--gray"></icon>
-  <icon class="logo logo--small logo--multi"></icon>
-      </xmp>
-      <h4>What the above code does...</h4>
-      <div class="line">
-        <div class="unit size1of2">
-          <icon class="logo logo--small logo--gray"></icon>
-        </div>
-        <div class="lastUnit size1of2">
-          <icon class="logo logo--small logo--multi"></icon>
-        </div>
-      </div> -->
-
-
-
-
-
-
       <hr>
       <h4>Code: General Icons</h4>
       <div class="line border--bottom">
@@ -493,12 +477,44 @@
         </div>
       </div>
 
-
-
     </div>
     <div class="divider-sg--v"></div>
     <!-- /ICONS & LOGO -->
 
+
+
+    <!-- NAVIGATION -->
+    <div class="line">
+      <h1 class="u-align--center">Navigation</h1>
+
+      <hr>
+      <h4>Code: Primary Site Navigation</h4>
+      <p>These are the styles for the primary site navigation.</p>
+      <xmp class="code">
+  <div class="main-nav">
+    <ul>
+      <li><a class="main-nav-link">Home</a></li>
+      <li><a class="main-nav-link">Otherplace</a></li>
+      <li><a class="main-nav-link">Somedest</a></li>
+    </ul>
+  </div>
+      </xmp>
+      <h4>What the above code does...</h4>
+      <div class="line">
+        <div class="lastUnit size1of1">
+          <div class="main-nav">
+            <ul>
+              <li><a class="main-nav-link">Home</a></li>
+              <li><a class="main-nav-link">Otherplace</a></li>
+              <li><a class="main-nav-link">Somedest</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="divider-sg--v"></div>
+    <!-- /NAVIGATION -->
 
 
 

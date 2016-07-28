@@ -1,0 +1,55 @@
+.main-nav {
+  z-index: 50;
+  height: 72px;
+  font-size: 18px;
+  color: #666C71;
+  background-color: #FFF;
+}
+
+/*.main-nav--fixed-wrap {
+  position: fixed;
+  width: 100%;
+  outline: 0;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 50;
+}*/
+
+.main-nav ul li {
+  font-family: 'Porter Medium', 'Helvetic-Neue', Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  margin-left: 70px;
+  line-height: 72px;
+  height: 72px;
+  display: inline-block;
+  cursor: pointer;
+}
+.main-nav ul li:first-child {
+  margin-left: 0px;
+}
+
+.main-nav-link {
+  height: 100%;
+  color: #666C71;
+  cursor: pointer;
+  text-decoration: none;
+  line-height: inherit;
+}
+
+
+
+
+
+
+
+
+
+/*.selfclear:before,
+.selfclear:after {
+    content:" ";
+    display:table
+}
+.selfclear:after {
+    clear:both
+}*/

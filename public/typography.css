@@ -44,6 +44,10 @@ a {
   line-height: 24px;
 }
 
+a.small {
+  font-size: 13px;
+}
+
 /* Callouts */
 
 em, .em {
@@ -69,5 +73,6 @@ blockquote {
 }
 
 blockquote > .citation {
+  padding-top: 12px;
   font-size: 13px;
 }
