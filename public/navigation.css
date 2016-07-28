@@ -4,9 +4,10 @@
   font-size: 18px;
   color: #666C71;
   background-color: #FFF;
+  border-bottom: 1px solid #efefef;
 }
 
-/*.main-nav--fixed-wrap {
+.main-nav--fixed {
   position: fixed;
   width: 100%;
   outline: 0;
@@ -14,19 +15,26 @@
   right: 0;
   left: 0;
   z-index: 50;
-}*/
+}
 
-.main-nav ul li {
+.main-nav li {
   font-family: 'Porter Medium', 'Helvetic-Neue', Helvetica, Arial, sans-serif;
   text-transform: uppercase;
-  margin-left: 70px;
+  padding-left: 35px;
+  padding-right: 35px;
   line-height: 72px;
   height: 72px;
   display: inline-block;
   cursor: pointer;
+  float: left;
 }
-.main-nav ul li:first-child {
-  margin-left: 0px;
+.main-nav li:first-child {
+  /*margin-left: 0px;*/
+}
+
+.main-nav li:hover,
+.main-nav li.selected {
+  background-color: #efefef;
 }
 
 .main-nav-link {

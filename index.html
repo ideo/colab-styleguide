@@ -14,10 +14,21 @@
 </head>
 <body>
 
+  <!-- Actual Page Nav -->
+  <!-- Not part of the styleguide -->
+  <div class="main-nav main-nav--fixed">
+    <ul>
+      <li class="selected"><a href="index.html" class="main-nav-link">Atoms</a></li>
+      <li><a href="index.html" class="main-nav-link">Molecules</a></li>
+      <li><a href="index.html" class="main-nav-link">Pages</a></li>
+    </ul>
+  </div>
+
+
+  <!-- Begin styleguide -->
+
+  <!-- GRIDS -->
   <div class="container">
-
-    <!-- GRIDS -->
-
     <div class="line">
       <h1 class="u-align--center">Grids</h1>
 
@@ -101,6 +112,18 @@
       </div>
 
       <hr>
+      <h4>Code: A Note About the Page Container</h4>
+      <p>The entire page is contained by an element with the <code>.container</code> class added. This element sets the max width of the page based on the container width.</p>
+      <xmp class="code">
+  <div class="container">
+    <div class="line">
+      <div class="lastUnit size1of1">...</div>
+    </div>
+      ...other page html...
+  </div>
+      </xmp>
+
+      <hr>
       <h4>Code: A Non-nested Grid</h4>
       <p>This code snippet applies to any and all non-nested grids. Note how they are wrapped in a <code>line</code> tag, and that the first two <code>div</code>s have the <code>unit</code> class applied, while the last unit specifically has the <code>lastUnit</code> class applied. This handles padding for you.</p>
       <xmp class="code">
@@ -153,11 +176,13 @@
       </div>
     </div>
     <div class="divider-sg--v"></div>
-    <!-- /GRIDS -->
+  </div>
+  <!-- /GRIDS -->
 
 
 
-    <!-- TYPOGRAPHY -->
+  <!-- TYPOGRAPHY -->
+  <div class="container">
     <div class="line">
       <h1 class="u-align--center">Typography</h1>
 
@@ -274,11 +299,13 @@
       </div>
     </div>
     <div class="divider-sg--v"></div>
-    <!-- /TYPOGRAPHY -->
+  </div>
+  <!-- /TYPOGRAPHY -->
 
 
 
-    <!-- COLORS -->
+  <!-- COLORS -->
+  <div class="container">
     <div class="line">
       <h1 class="u-align--center">Colors</h1>
 
@@ -339,11 +366,13 @@
 
     </div>
     <div class="divider-sg--v"></div>
-    <!-- /COLORS -->
+  </div>
+  <!-- /COLORS -->
 
 
 
-    <!-- FORMS -->
+  <!-- FORMS -->
+  <div class="container">
     <div class="line">
       <h1 class="u-align--center">Forms</h1>
 
@@ -394,11 +423,13 @@
 
     </div>
     <div class="divider-sg--v"></div>
-    <!-- /FORMS -->
+  </div>
+  <!-- /FORMS -->
 
 
 
-    <!-- ICONS & LOGO -->
+  <!-- ICONS & LOGO -->
+  <div class="container">
     <div class="line">
       <h1 class="u-align--center">Logos & Icons</h1>
 
@@ -479,23 +510,25 @@
 
     </div>
     <div class="divider-sg--v"></div>
-    <!-- /ICONS & LOGO -->
+  </div>
+  <!-- /ICONS & LOGO -->
 
 
 
-    <!-- NAVIGATION -->
+  <!-- NAVIGATION -->
+  <div class="container">
     <div class="line">
       <h1 class="u-align--center">Navigation</h1>
 
       <hr>
       <h4>Code: Primary Site Navigation</h4>
-      <p>These are the styles for the primary site navigation.</p>
+      <p>These are the styles for the primary site navigation. It can either move with the page (as in the immediate sample code below), or be fixed to the top of the page (as it is on the current page you're viewing). Both code examples are below.</p>
       <xmp class="code">
   <div class="main-nav">
     <ul>
       <li><a class="main-nav-link">Home</a></li>
-      <li><a class="main-nav-link">Otherplace</a></li>
-      <li><a class="main-nav-link">Somedest</a></li>
+      <li><a class="main-nav-link">Examples</a></li>
+      <li><a class="main-nav-link">Pages</a></li>
     </ul>
   </div>
       </xmp>
@@ -505,16 +538,28 @@
           <div class="main-nav">
             <ul>
               <li><a class="main-nav-link">Home</a></li>
-              <li><a class="main-nav-link">Otherplace</a></li>
-              <li><a class="main-nav-link">Somedest</a></li>
+              <li><a class="main-nav-link">Examples</a></li>
+              <li><a class="main-nav-link">Pages</a></li>
             </ul>
           </div>
         </div>
       </div>
+      <br>
+      <br>
+
+      <p><strong>NOTE:</strong> You can also fix the primary site navigation to the top spanning the full width (simply look at the header navigation on this page). Just augment the <code>.main-nav</code> class with the <code>.main-nav--fixed</code> class.</p>
+      <xmp class="code">
+  <div class="main-nav main-nav--fixed">
+    <ul>
+      ...
+    </ul>
+  </div>
+      </xmp>
 
     </div>
     <div class="divider-sg--v"></div>
-    <!-- /NAVIGATION -->
+  </div>
+  <!-- /NAVIGATION -->
 
 
 
