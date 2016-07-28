@@ -1,0 +1,67 @@
+/* Buttons w/ Icons */
+
+i.icon {
+  display: inline-block;
+  position: relative;
+  height: 51px;
+  width: 51px;
+  background-color: transparent;
+}
+
+
+/* Icons */
+
+.arrow--left {
+  background: url("./../icons/icon-arrow--left.png") center center no-repeat;
+}
+
+.arrow--right {
+  background: url("./../icons/icon-arrow--right.png") center center no-repeat;
+}
+
+.arrow--up {
+  background: url("./../icons/icon-arrow--up.png") center center no-repeat;
+}
+
+.arrow--down {
+  background: url("./../icons/icon-arrow--down.png") center center no-repeat;
+}
+
+/* Logos */
+
+.logo {
+  display: inline-block;
+  position: relative;
+}
+
+.logo--small {
+  height: 46px;
+  width: 40px;
+}
+
+.logo--large {
+  height: 115px;
+  width: 100px;
+}
+
+.logo--large__with-text {
+  height: 148px;
+  width: 100px;
+}
+
+.logo--dark {
+  background: url("./../icons/logo-colab--dark.png") center center no-repeat;
+}
+
+.logo--light {
+  background: url("./../icons/logo-colab--light.png") center center no-repeat;
+}
+
+.logo--gray {
+  background: url("./../icons/logo-colab-small--gray.png") center center no-repeat;
+}
+
+.logo--multi {
+  background: url("./../icons/logo-colab-small--multi.png") center center no-repeat;
+}
+

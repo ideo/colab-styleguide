@@ -9,6 +9,7 @@
 label {
   color: #484848;
   display: block;
+  font-family: 'Avenir Medium', 'Helvetic-Neue', Helvetica, Arial, sans-serif;
   max-width: 635px;
   padding-bottom: 10px;
   -webkit-user-select: none;
@@ -90,4 +91,10 @@ button,
 button + button,
 .button + .button {
   margin-left: 15px;
+}
+
+button.text-only,
+.button.text-only {
+  background-color: transparent;
+  color: #f37021;
 }
