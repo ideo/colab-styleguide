@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="public/icons.css">
   <link rel="stylesheet" href="public/navigation.css">
   <link rel="stylesheet" href="public/typography.css">
-  <!-- <link rel="stylesheet" href="public/colab-styleguide.min.css"> -->
+  <!-- <link rel="stylesheet" href="dist/css/colab-styleguide.min.css"> -->
   <link rel="stylesheet" href="public/app-specific.css">
 </head>
 <body>
@@ -421,6 +421,40 @@
           </div>
         </div>
       </div>
+
+      <hr>
+      <h4>Code: Select Inputs</h4>
+      <p>Select inputs still use the <code>.field-wrap</code> class for the entire container, but for the custom select styling, we rely on the <code>.select-wrap</code> wrapper class.</p>
+      <xmp class="code">
+  <div class="field-wrap">
+    <label for="">State</label>
+    <div class="select-wrap">
+      <select>
+        <option value="volvo">CA</option>
+        <option value="saab">NE</option>
+        <option value="mercedes">WI</option>
+      </select>
+      <span class="icon">&#x25BE</span>
+    </div>
+  </div>
+      </xmp>
+      <h4>What the above code does...</h4>
+      <div class="line">
+        <div class="unit size1of1">
+          <div class="field-wrap">
+            <label for="">State</label>
+            <div class="select-wrap">
+              <select>
+                <option value="volvo">CA</option>
+                <option value="saab">NE</option>
+                <option value="mercedes">WI</option>
+              </select>
+              <span class="icon">&#x25BE</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
 
     </div>
     <div class="divider-sg--v"></div>
