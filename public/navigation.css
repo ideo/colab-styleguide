@@ -1,3 +1,5 @@
+/* Primary Nav */
+
 .main-nav {
   z-index: 10;
   height: 72px;
@@ -28,9 +30,6 @@
   cursor: pointer;
   float: left;
 }
-.main-nav li:first-child {
-  /*margin-left: 0px;*/
-}
 
 .main-nav li:hover,
 .main-nav li.selected {
@@ -45,19 +44,21 @@
   line-height: inherit;
 }
 
+/* Footer Nav */
 
-
-
-
-
-
-
-
-/*.selfclear:before,
-.selfclear:after {
-    content:" ";
-    display:table
+footer {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-top: 30px;
+  background-color: #EDF0F2;
 }
-.selfclear:after {
-    clear:both
-}*/
+footer:after {
+  content: "";
+  display: table;
+}
+
+footer a {
+  text-decoration: none;
+  display: block;
+  margin-bottom: 20px;
+}

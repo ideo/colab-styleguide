@@ -24,6 +24,7 @@
       <li><a href="index.html" class="main-nav-link">Pages</a></li>
     </ul>
   </div>
+  <!-- /Not part of the styleguide -->
 
 
   <!-- Begin styleguide -->
@@ -557,7 +558,8 @@
 
       <hr>
       <h4>Code: Site Navigation</h4>
-      <p>These are the styles for the primary site navigation. It can either move with the page (as in the immediate sample code below), or be fixed to the top of the page (as it is on the current page you're viewing). Both code examples are below.</p>
+      <p>These are the styles for the primary site navigation. The site navigation links can either move with the page (see the code sample immediately below), or stay <strong>fixed to the top of the page</strong> (like the current page you're viewing).</p>
+      <p>Both code examples are shown below. <strong>Important note: The element containing the <code>.main-nav</code> element itself should sit outside of a <code>.container</code> class</strong>. This way the header stretches to the full document width.</p>
       <xmp class="code">
   <div class="main-nav">
     <ul>
@@ -582,7 +584,7 @@
       <br>
       <br>
 
-      <p><strong>Fixing to the page top:</strong> You can also fix the primary site navigation to the top spanning the full width (simply look at the header navigation on this page). Just augment the <code>.main-nav</code> class with the <code>.main-nav--fixed</code> class.</p>
+      <p><strong>Fixing the primary navigation to the top of the page:</strong> You can also fix the primary site navigation to the top of the page and force it to span the full document width by adding the <code>.main-nav--fixed</code> class to the element already containing the <code>.main-nav</code> class.</p>
       <xmp class="code">
   <div class="main-nav main-nav--fixed">
     <ul>
@@ -590,9 +592,6 @@
     </ul>
   </div>
       </xmp>
-
-      <br>
-      <p><strong>A note about the page container:</strong> [!!!ADD NOTE HERE!!!].</p>
 
     </div>
     <div class="divider-sg--v"></div>
@@ -607,40 +606,45 @@
       <h1 class="u-align--center">Site Footer</h1>
 
       <hr>
-      <h4>Code: Primary Site Navigation</h4>
-      <p>These are the styles for the primary site navigation. It can either move with the page (as in the immediate sample code below), or be fixed to the top of the page (as it is on the current page you're viewing). Both code examples are below.</p>
+      <h4>Code: Site Footer</h4>
+      <p>These are the styles for the site footer. The footer should move with the page—not out of the flow (it is not positioned absolutely or fixed currently). <strong>Important note: The <code>footer</code> element itself should sit outside of a <code>.container</code> class.</strong> However, all content within the footer should be <strong>within the <code>.container</code> class.</strong> This is so that the footer coloring will span the width of the document, but the content will fit the page flow.</p>
       <xmp class="code">
-  <div class="main-nav">
-    <ul>
-      <li><a class="main-nav-link">Home</a></li>
-      <li><a class="main-nav-link">Examples</a></li>
-      <li><a class="main-nav-link">Pages</a></li>
-    </ul>
-  </div>
-      </xmp>
-      <h4>What the above code does...</h4>
+  <footer>
+    <div class="container">
       <div class="line">
-        <div class="lastUnit size1of1">
-          <div class="main-nav">
-            <ul>
-              <li><a class="main-nav-link">Home</a></li>
-              <li><a class="main-nav-link">Examples</a></li>
-              <li><a class="main-nav-link">Pages</a></li>
-            </ul>
+        <div class="lastGroup size1of1">
+          <div class="unit size1of3">
+            <a href="" class="small">col1 footer link</a>
+          </div>
+          <div class="unit size1of3">
+            <a href="" class="small">col2 footer link</a>
+          </div>
+          <div class="lastUnit size1of3">
+            <a href="" class="small">col3 footer link</a>
           </div>
         </div>
       </div>
-      <br>
-      <br>
-
-      <p><strong>NOTE:</strong> You can also fix the primary site navigation to the top spanning the full width (simply look at the header navigation on this page). Just augment the <code>.main-nav</code> class with the <code>.main-nav--fixed</code> class.</p>
-      <xmp class="code">
-  <div class="main-nav main-nav--fixed">
-    <ul>
-      ...
-    </ul>
-  </div>
+    </div>
+  </footer>
       </xmp>
+      <h4>What the above code does...</h4>
+      <footer>
+        <div class="container">
+          <div class="line">
+            <div class="lastGroup size1of1">
+              <div class="unit size1of3">
+                <a href="" class="small">col1 footer link</a>
+              </div>
+              <div class="unit size1of3">
+                <a href="" class="small">col2 footer link</a>
+              </div>
+              <div class="lastUnit size1of3">
+                <a href="" class="small">col3 footer link</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
 
     </div>
     <div class="divider-sg--v"></div>
@@ -649,10 +653,30 @@
 
 
 
-
-
-
-  </div>
+  <!-- Not part of the styleguide -->
+  <footer>
+    <div class="container">
+      <div class="line">
+        <div class="lastGroup size1of1">
+          <div class="unit size1of3">
+            <a href="index.html" class="small">Atoms</a>
+            <a href="index.html" class="small">Molecules</a>
+            <a href="index.html" class="small">Pages</a>
+          </div>
+          <div class="unit size1of3">
+            <a href="" class="small">col2 footer link</a>
+            <a href="" class="small">col2 footer link</a>
+          </div>
+          <div class="lastUnit size1of3">
+            <a href="" class="small">col3 footer link</a>
+            <a href="" class="small">col3 footer link</a>
+            <a href="" class="small">col3 footer link</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- /Not part of the styleguide -->
 
 </body>
 </html>

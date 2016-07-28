@@ -6,6 +6,11 @@
   padding-left: 15px;
   padding-right: 15px;
 }
+.container:after {
+  content: "";
+  display: table;
+}
+
 
 .line {
   zoom: 1
