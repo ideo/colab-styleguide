@@ -57,6 +57,10 @@ input[type="search"]:focus {
   outline: none
 }
 
+textarea {
+  display: block;
+}
+
 /* Selects */
 
 .select-wrap {

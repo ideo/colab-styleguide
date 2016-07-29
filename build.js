@@ -8,6 +8,8 @@ const cssMinify =   `cat ` +
                     `public/forms.css ` +
                     `public/grid.css ` +
                     `public/icons.css ` +
+                    `public/images.css ` +
+                    `public/molecules.css ` +
                     `public/navigation.css ` +
                     `public/typography.css ` +
                     // `| cleancss -o dist/css/colab-styleguide.min.css ` + // playing around with the api

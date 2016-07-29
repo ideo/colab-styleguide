@@ -13,6 +13,10 @@ hr {
   margin-bottom: 50px;
 }
 
+img {
+  background: url(./../images/sunup.jpg);
+}
+
 code, .code {
   font-size: inherit;
   white-space: pre-wrap;

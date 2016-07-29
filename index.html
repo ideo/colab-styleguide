@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="public/forms.css">
   <link rel="stylesheet" href="public/grid.css">
   <link rel="stylesheet" href="public/icons.css">
+  <link rel="stylesheet" href="public/images.css">
   <link rel="stylesheet" href="public/navigation.css">
   <link rel="stylesheet" href="public/typography.css">
   <!-- <link rel="stylesheet" href="dist/css/colab-styleguide.min.css"> -->
@@ -407,7 +408,7 @@
       </div>
 
       <hr>
-      <h4>Code: Text Inputs</h4>
+      <h4>Code: Inputs</h4>
       <p>Text inputs use the <code>input</code> tag. Note the wrapping of the input field and the label within the <code>field-wrap</code> class.</p>
       <xmp class="code">
   <div class="field-wrap">
@@ -426,7 +427,28 @@
       </div>
 
       <hr>
-      <h4>Code: Select Inputs</h4>
+      <h4>Code: Textareas</h4>
+      <p>Text areas use the <code>textarea</code> tag. Note the wrapping of the input field and the label within the <code>field-wrap</code> class.</p>
+      <xmp class="code">
+  <div class="field-wrap">
+    <label for="">Your life story</label>
+    <textarea type="text" placeholder="Add your life story" /></textarea>
+    <button>Submit</button>
+  </div>
+      </xmp>
+      <h4>What the above code does...</h4>
+      <div class="line">
+        <div class="unit size1of1">
+          <div class="field-wrap">
+            <label for="">Your life story</label>
+            <textarea type="text" placeholder="Add your life story" /></textarea>
+            <button>Submit</button>
+          </div>
+        </div>
+      </div>
+
+      <hr>
+      <h4>Code: Selects</h4>
       <p>Select inputs still use the <code>.field-wrap</code> class for the entire container, but for the custom select styling, we rely on the <code>.select-wrap</code> wrapper class.</p>
       <xmp class="code">
   <div class="field-wrap">
@@ -463,6 +485,65 @@
     <div class="divider-sg--v"></div>
   </div>
   <!-- /FORMS -->
+
+
+
+  <!-- IMAGES -->
+  <div class="container">
+    <div class="line">
+      <h1 class="u-align--center">Images</h1>
+
+      <hr>
+      <h4>Code: Avatar Images</h4>
+      <p>Avatar images are handled with the <code>.img-avatar</code> class applied to an <code>img</code> tag already using the <code>.img</code> class.</p>
+      <p><strong>Note for image sources: </strong> You'll need to add a class or source to any image that you use. All of the image helper classes are useful only for sizing and position within the containing element.</p>
+      <p><strong>Note for heroes and banners:</strong> If these image classes are used outside of the <code>.container</code> class, the images will naturally stretch to the width of the document.</p>
+      <xmp class="code">
+  <img class="img img-avatar">
+      </xmp>
+      <h4>What the above code does...</h4>
+      <img class="img img-avatar">
+
+      <hr>
+      <h4>Code: Tile Images</h4>
+      <p>Tile images are handled with the <code>.img-tile</code> class applied to an <code>img</code> tag already using the <code>.img</code> class.</p>
+      <xmp class="code">
+  <img class="img img-tile">
+      </xmp>
+      <h4>What the above code does...</h4>
+      <img class="img img-tile">
+
+      <hr>
+      <h4>Code: Square Images</h4>
+      <p>Square images are handled with the <code>.img-square</code> class applied to an <code>img</code> tag already using the <code>.img</code> class.</p>
+      <xmp class="code">
+  <img class="img img-square">
+      </xmp>
+      <h4>What the above code does...</h4>
+      <img class="img img-square">
+
+      <hr>
+      <h4>Code: Banner Images</h4>
+      <p>Banner images are handled with the <code>.img-banner</code> class applied to an <code>img</code> tag already using the <code>.img</code> class.</p>
+      <xmp class="code">
+  <img class="img img-banner">
+      </xmp>
+      <h4>What the above code does...</h4>
+      <img class="img img-banner">
+
+      <hr>
+      <h4>Code: Hero Images</h4>
+      <p>Hero images are handled with the <code>.img-hero</code> class applied to an <code>img</code> tag already using the <code>.img</code> class.</p>
+      <xmp class="code">
+  <img class="img img-hero">
+      </xmp>
+      <h4>What the above code does...</h4>
+      <img class="img img-hero">
+
+    </div>
+    <div class="divider-sg--v"></div>
+  </div>
+  <!-- /IMAGES -->
 
 
 
@@ -662,8 +743,8 @@
         <div class="lastGroup size1of1">
           <div class="unit size1of3">
             <a href="index.html" class="small">Atoms</a>
-            <a href="index.html" class="small">Molecules</a>
-            <a href="index.html" class="small">Pages</a>
+            <a href="molecules.html" class="small">Molecules</a>
+            <a href="code.html" class="small">Code</a>
           </div>
           <div class="unit size1of3">
             <a href="" class="small">col2 footer link</a>
