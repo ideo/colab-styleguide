@@ -3,8 +3,8 @@
 /* They are specific to the actual styleguide app */
 /*  */
 
-html, body {
-  padding-top: 60px;
+body {
+  margin-top: 100px;
 }
 
 hr {
