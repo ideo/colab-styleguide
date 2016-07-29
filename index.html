@@ -4,6 +4,7 @@
   <title>coLAB Styleguide</title>
 
   <link rel="stylesheet" href="public/base.css">
+  <link rel="stylesheet" href="public/banners.css">
   <link rel="stylesheet" href="public/colors.css">
   <link rel="stylesheet" href="public/forms.css">
   <link rel="stylesheet" href="public/grid.css">
@@ -36,6 +37,7 @@
         <a href="#colors" class="strong">Colors</a> |
         <a href="#forms" class="strong">Forms</a> |
         <a href="#images" class="strong">Images</a> |
+        <a href="#heroes-banners" class="strong">Heroes & Banners</a> |
         <a href="#icons-logos" class="strong">Icons & Logos</a> |
         <a href="#site-nav" class="strong">Site Navigation</a> |
         <a href="#site-footer" class="strong">Site Footer</a>
@@ -516,7 +518,6 @@
       <h4>Code: Avatar Images</h4>
       <p>Avatar images are handled with the <code>.img-avatar</code> class applied to an <code>img</code> tag already using the <code>.img</code> class.</p>
       <p><strong>Note for image sources: </strong> You'll need to add a class or source to any image that you use. All of the image helper classes are useful only for sizing and position within the containing element.</p>
-      <p><strong>Note for heroes and banners:</strong> If these image classes are used outside of the <code>.container</code> class, the images will naturally stretch to the width of the document.</p>
       <xmp class="code">
   <img class="img img-avatar">
       </xmp>
@@ -541,29 +542,56 @@
       <h4>What the above code does...</h4>
       <img class="img img-square">
 
-      <hr>
-      <h4>Code: Banner Images</h4>
-      <p>Banner images are handled with the <code>.img-banner</code> class applied to an <code>img</code> tag already using the <code>.img</code> class.</p>
-      <xmp class="code">
-  <img class="img img-banner">
-      </xmp>
-      <h4>What the above code does...</h4>
-      <img class="img img-banner">
-
-      <hr>
-      <h4>Code: Hero Images</h4>
-      <p>Hero images are handled with the <code>.img-hero</code> class applied to an <code>img</code> tag already using the <code>.img</code> class.</p>
-      <xmp class="code">
-  <img class="img img-hero">
-      </xmp>
-      <h4>What the above code does...</h4>
-      <img class="img img-hero">
-
     </div>
     <div class="divider-sg--v"></div>
   </div>
   <!-- /IMAGES -->
 
+
+
+  <!-- HEROES & BANNERS -->
+  <div class="container">
+    <div class="line">
+      <h1 id="heroes-banners" class="u-align--center">Heroes & Banners</h1>
+
+      <hr>
+      <h4>Code: Heroes</h4>
+      <p>Heroes are page leads that are handled with the <code>.hero</code> class applied to some element (likely a <code>div</code>).</p>
+      <p><strong>Note about filling a hero with an image: </strong>You can use the <code>.img-hero</code> class in a nested <code>img</code> tag to add an image that fills the hero. Or you can fill it with a color if you prefer...implementation is up to you. The example below uses an image to fill the space.</p>
+      <p><strong>Note about having heroes and banners span the document width:</strong> If elements and classes are used outside of a <code>.container</code> class, the elements and images will naturally stretch to fill the entire width of the document.</p>
+      <xmp class="code">
+  <div class="hero">
+    <img class="img-hero" />
+  </div>
+      </xmp>
+      <h4>What the above code does...</h4>
+      <div class="hero"><img class="img-hero"></div>
+
+      <hr>
+      <h4>Code: Banners</h4>
+      <p>Banners are handled with the <code>.banner</code> class applied to some element (likely a <code>div</code>).</p>
+      <p><strong>Note about filling a banner with an image: </strong>You can use the <code>.img-banner</code> class in a nested <code>img</code> tag to add an image that fills the banner. Or you can fill it with a color if you prefer...implementation is up to you. The example below uses an image to fill the space.</p>
+      <xmp class="code">
+  <div class="banner">
+    <img class="img-banner" />
+  </div>
+      </xmp>
+      <h4>What the above code does...</h4>
+      <div class="banner"><img class="img-banner"></div>
+
+      <!-- <hr>
+      <h4>Code: Heroes</h4>
+      <p>Heroes are handled with the <code>.hero</code> class.</p>
+      <xmp class="code">
+  <img class="img img-hero">
+      </xmp>
+      <h4>What the above code does...</h4>
+      <img class="img img-hero"> -->
+
+    </div>
+    <div class="divider-sg--v"></div>
+  </div>
+  <!-- /HEROES & BANNERS -->
 
 
   <!-- ICONS & LOGO -->

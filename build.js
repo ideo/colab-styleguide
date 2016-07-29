@@ -3,6 +3,7 @@
 const exec = require('child_process').exec;
 
 const cssMinify =   `cat ` +
+                    `public/banners.css ` +
                     `public/base.css ` +
                     `public/colors.css ` +
                     `public/forms.css ` +
