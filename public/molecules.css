@@ -1,0 +1,44 @@
+
+.tile {
+  background-color: #F7F9FB;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/* Standard Tiles */
+
+.standard-tile {
+  height: 400px;
+  max-height: 400px;
+}
+
+.standard-tile .text-container {
+  position: relative;
+  padding: 15px;
+}
+
+/* Project Tiles */
+
+.project-tile {
+  height: 450px;
+  max-height: 450px;
+  border: 5px solid #EDF0F2;
+}
+
+.project-tile .text-container {
+  position: relative;
+  padding: 80px 40px;
+}
+
+.project-tile img.triangles {
+  background: url(./../icons/icon-multi-tris--colored.png) center center no-repeat;
+  outline: 1px #F7F9FB solid;
+  height: 212px;
+  width: 235px;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}

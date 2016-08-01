@@ -1,6 +1,11 @@
 'use strict'
 
-const exec = require('child_process').exec;
+const exec = require('child_process').exec
+
+// Note:
+// this only minifies the CSS, it does not ensure that
+// all icons are copied over into the icons folder in dist
+// TODO: do this copying :)
 
 const cssMinify =   `cat ` +
                     `public/banners.css ` +
@@ -16,12 +21,13 @@ const cssMinify =   `cat ` +
                     // `| cleancss -o dist/css/colab-styleguide.min.css ` + // playing around with the api
                     `| cleancss > dist/css/colab-styleguide.min.css `
 
-
-exec(cssMinify, (error, stdout, stderr) => {
-  if (error) {
-    console.error(`exec error: ${error}`);
-    return;
-  }
-  console.log(`stdout: ${stdout}`);
-  console.log(`stderr: ${stderr}`);
-});
+let minify = () => {
+  exec(cssMinify, (error, stdout, stderr) => {
+    if (error) {
+      console.error(`exec error: ${error}`)
+      return
+    }
+    console.log(`stdout: ${stdout}`)
+    console.log(`stderr: ${stderr}`)
+  })
+}

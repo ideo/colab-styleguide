@@ -12,7 +12,6 @@
   <link rel="stylesheet" href="public/images.css">
   <link rel="stylesheet" href="public/navigation.css">
   <link rel="stylesheet" href="public/typography.css">
-  <!-- <link rel="stylesheet" href="dist/css/colab-styleguide.min.css"> -->
   <link rel="stylesheet" href="public/app-specific.css">
 </head>
 <body>
@@ -137,7 +136,7 @@
       </div>
 
       <hr>
-      <h4>Code: A Note About the Page Container</h4>
+      <h4>Code For: Page Container</h4>
       <p>The entire page is contained by an element with the <code>.container</code> class added. This element sets the max width of the page based on the container width.</p>
       <p><strong>NOTE:</strong> It is also important to note the use of the <code>.lastUnit</code> and <code>.lastGroup</code> classes in the grid. These are specifically used in the last elements of groups and classes to handle the padding of the last element.</p>
       <xmp class="code">
@@ -150,7 +149,7 @@
       </xmp>
 
       <hr>
-      <h4>Code: A Non-nested Grid</h4>
+      <h4>Code For: A Non-nested Grid</h4>
       <p>This code snippet applies to any and all non-nested grids. Note how they are wrapped in a <code>line</code> tag, and that the first two <code>div</code>s have the <code>unit</code> class applied, while the last unit specifically has the <code>lastUnit</code> class applied. This handles padding for you.</p>
       <xmp class="code">
   <div class="line">
@@ -173,7 +172,7 @@
       </div>
 
       <hr>
-      <h4>Code: A Nested Grid</h4>
+      <h4>Code For: A Nested Grid</h4>
       <p>This code snippet applies to nested grids. Nesting is accomplished using the <code>group</code> and <code>lastGroup</code> classes.</p>
       <xmp class="code">
   <div class="line">
@@ -403,7 +402,7 @@
       <h1 id="forms" class="u-align--center">Forms</h1>
 
       <hr>
-      <h4>Code: Buttons</h4>
+      <h4>Code For: Buttons</h4>
       <p>Buttons use the <code>button</code> tag or <code>.button</code> class. Multiple button spacing is already handled in the css.</p>
       <xmp class="code">
   <button>Sign Up</button><button class="color-bg--cta__subtle">Secondary CTA</button>
@@ -416,7 +415,7 @@
       </div>
 
       <hr>
-      <h4>Code: Text-Only Buttons</h4>
+      <h4>Code For: Text-Only Buttons</h4>
       <p>Text-only buttons use the <code>.text-only</code> class. This must be used in conjunction with the <code>button</code> tag or <code>.button</code> class.</p>
       <xmp class="code">
   <button class="text-only">Some Text Button</button>
@@ -429,7 +428,7 @@
       </div>
 
       <hr>
-      <h4>Code: Inputs</h4>
+      <h4>Code For: Inputs</h4>
       <p>Text inputs use the <code>input</code> tag. Note the wrapping of the input field and the label within the <code>field-wrap</code> class.</p>
       <xmp class="code">
   <div class="field-wrap">
@@ -448,7 +447,7 @@
       </div>
 
       <hr>
-      <h4>Code: Textareas</h4>
+      <h4>Code For: Textareas</h4>
       <p>Text areas use the <code>textarea</code> tag. Note the wrapping of the input field and the label within the <code>field-wrap</code> class.</p>
       <xmp class="code">
   <div class="field-wrap">
@@ -469,7 +468,7 @@
       </div>
 
       <hr>
-      <h4>Code: Selects</h4>
+      <h4>Code For: Selects</h4>
       <p>Select inputs still use the <code>.field-wrap</code> class for the entire container, but for the custom select styling, we rely on the <code>.select-wrap</code> wrapper class.</p>
       <xmp class="code">
   <div class="field-wrap">
@@ -515,7 +514,7 @@
       <h1 id="images" class="u-align--center">Images</h1>
 
       <hr>
-      <h4>Code: Avatar Images</h4>
+      <h4>Code For: Avatar Images</h4>
       <p>Avatar images are handled with the <code>.img-avatar</code> class applied to an <code>img</code> tag already using the <code>.img</code> class.</p>
       <p><strong>Note for image sources: </strong> You'll need to add a class or source to any image that you use. All of the image helper classes are useful only for sizing and position within the containing element.</p>
       <xmp class="code">
@@ -525,7 +524,7 @@
       <img class="img img-avatar">
 
       <hr>
-      <h4>Code: Tile Images</h4>
+      <h4>Code For: Tile Images</h4>
       <p>Tile images are handled with the <code>.img-tile</code> class applied to an <code>img</code> tag already using the <code>.img</code> class.</p>
       <xmp class="code">
   <img class="img img-tile">
@@ -534,7 +533,7 @@
       <img class="img img-tile">
 
       <hr>
-      <h4>Code: Square Images</h4>
+      <h4>Code For: Square Images</h4>
       <p>Square images are handled with the <code>.img-square</code> class applied to an <code>img</code> tag already using the <code>.img</code> class.</p>
       <xmp class="code">
   <img class="img img-square">
@@ -555,7 +554,7 @@
       <h1 id="heroes-banners" class="u-align--center">Heroes & Banners</h1>
 
       <hr>
-      <h4>Code: Heroes</h4>
+      <h4>Code For: Heroes</h4>
       <p>Heroes are page leads that are handled with the <code>.hero</code> class applied to some element (likely a <code>div</code>).</p>
       <p><strong>Note about filling a hero with an image: </strong>You can use the <code>.img-hero</code> class in a nested <code>img</code> tag to add an image that fills the hero. Or you can fill it with a color if you prefer...implementation is up to you. The example below uses an image to fill the space.</p>
       <p><strong>Note about having heroes and banners span the document width:</strong> If elements and classes are used outside of a <code>.container</code> class, the elements and images will naturally stretch to fill the entire width of the document.</p>
@@ -568,7 +567,7 @@
       <div class="hero"><img class="img-hero"></div>
 
       <hr>
-      <h4>Code: Banners</h4>
+      <h4>Code For: Banners</h4>
       <p>Banners are handled with the <code>.banner</code> class applied to some element (likely a <code>div</code>).</p>
       <p><strong>Note about filling a banner with an image: </strong>You can use the <code>.img-banner</code> class in a nested <code>img</code> tag to add an image that fills the banner. Or you can fill it with a color if you prefer...implementation is up to you. The example below uses an image to fill the space.</p>
       <xmp class="code">
@@ -580,7 +579,7 @@
       <div class="banner"><img class="img-banner"></div>
 
       <!-- <hr>
-      <h4>Code: Heroes</h4>
+      <h4>Code For: Heroes</h4>
       <p>Heroes are handled with the <code>.hero</code> class.</p>
       <xmp class="code">
   <img class="img img-hero">
@@ -600,7 +599,7 @@
       <h1 id="icons-logos" class="u-align--center">Icons & Logos</h1>
 
       <hr>
-      <h4>Code: Large Logos</h4>
+      <h4>Code For: Large Logos</h4>
       <p>The logo classes are modular.</p>
       <p>To handle large sizes, you can use the <code>.logo--large</code> or <code>.logo--large__with-text</code> classes in conjunction with the <code>.logo</code> class.</p>
       <p>To handle coloring you can use the <code>.logo--dark</code> and <code>.logo--light</code> classes.</p>
@@ -619,7 +618,7 @@
       </div>
 
       <hr>
-      <h4>Code: Small Logos</h4>
+      <h4>Code For: Small Logos</h4>
       <p>To handle small sizes, you only have access to the <code>.logo--small</code>class in conjunction with the <code>.logo</code> class.</p>
       <p>To handle coloring you can use the <code>.logo--gray</code> and <code>.logo--multi</code> classes.</p>
       <xmp class="code">
@@ -637,7 +636,7 @@
       </div>
 
       <hr>
-      <h4>Code: General Icons</h4>
+      <h4>Code For: General Icons</h4>
       <div class="line border--bottom">
         <div class="unit size1of2">
           <xmp class="code"><i class="arrow--left"></i></xmp>
@@ -687,7 +686,7 @@
       <h1 id="site-nav" class="u-align--center">Site Navigation</h1>
 
       <hr>
-      <h4>Code: Site Navigation</h4>
+      <h4>Code For: Site Navigation</h4>
       <p>These are the styles for the primary site navigation. The site navigation links can either move with the page (see the code sample immediately below), or stay <strong>fixed to the top of the page</strong> (like the current page you're viewing).</p>
       <p>Both code examples are shown below. <strong>Important note: The element containing the <code>.main-nav</code> element itself should sit outside of a <code>.container</code> class</strong>. This way the header stretches to the full document width.</p>
       <xmp class="code">
@@ -736,7 +735,7 @@
       <h1 id="site-footer" class="u-align--center">Site Footer</h1>
 
       <hr>
-      <h4>Code: Site Footer</h4>
+      <h4>Code For: Site Footer</h4>
       <p>These are the styles for the site footer. The footer should move with the page—not out of the flow (it is not positioned absolutely or fixed currently). <strong>Important note: The <code>footer</code> element itself should sit outside of a <code>.container</code> class.</strong> However, all content within the footer should be <strong>within the <code>.container</code> class.</strong> This is so that the footer coloring will span the width of the document, but the content will fit the page flow.</p>
       <xmp class="code">
   <footer>

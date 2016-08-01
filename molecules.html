@@ -4,10 +4,12 @@
   <title>coLAB Styleguide</title>
 
   <link rel="stylesheet" href="public/base.css">
+  <link rel="stylesheet" href="public/banners.css">
   <link rel="stylesheet" href="public/colors.css">
   <link rel="stylesheet" href="public/forms.css">
   <link rel="stylesheet" href="public/grid.css">
   <link rel="stylesheet" href="public/icons.css">
+  <link rel="stylesheet" href="public/images.css">
   <link rel="stylesheet" href="public/molecules.css">
   <link rel="stylesheet" href="public/navigation.css">
   <link rel="stylesheet" href="public/typography.css">
@@ -26,20 +28,208 @@
   </div>
   <!-- /Header -->
 
-  <!-- Main content -->
+
+
+  <!-- Navigation -->
   <div class="container">
-
     <div class="line">
-      <div class="lastUnit size1of1">
-        <h1 class="u-align--center">Molecules</h1>
-
-        <hr>
-        <p>Higher order molecules coming soon...</p>
+      <h1 class="u-align--center">Overview</h1>
+      <div class="u-align--center">
+        <a href="#heroheader" class="strong">Hero Header</a> |
+        <a href="#tiles" class="strong">Tiles</a>
       </div>
     </div>
-
+    <br>
+    <br>
+    <br>
   </div>
-  <!-- /Main content -->
+  <!-- /Navigation -->
+
+
+
+  <!-- Hero Header -->
+  <div class="container">
+    <div class="line">
+      <div class="lastUnit size1of1">
+        <h1 id="heroheader" class="u-align--center">Hero Header</h1>
+
+        <hr>
+        <h4>Code For: Hero Headers</h4>
+        <p>Hero Header are page leads that are handled with the <code>.hero</code> class applied to some element (likely a <code>div</code>).</p>
+        <p><strong>How to add a text block to a hero: </strong>Simply add the <code>.hero-text</code> class to a <code>div</code> within the <code>.hero</code> element in order to have a centered text box. Note that you muxt specify the the <code>unit</code> and <code>.size*of*</code> to give it a width. You will also need to add a <strong>background color</strong> to the <code>.text-container</code> element in order to get things looking spiffy.</p>
+        <p><strong>How to fill a hero with an image: </strong>You can use the <code>.img-hero</code> class in a nested <code>img</code> tag to add an image that fills the hero. Or you can fill it with a color if you prefer...implementation is up to you. The example below uses an image to fill the space.</p>
+        <p><strong>How to make the heroe span full document width:</strong> If elements and classes are used outside of a <code>.container</code> class, the elements and images will naturally stretch to fill the entire width of the document.</p>
+
+        <xmp class="code">
+  <div class="hero">
+    <div class="line">
+      <img class="img-hero">
+      <div class="hero-text color-bg--coral unit size1of2">
+        <h1>this is a headline about a possible project of the colab.</h1>
+      </div>
+    </div>
+  </div>
+        </xmp>
+
+        <h4>What the above code does...</h4>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero">
+    <div class="line">
+      <img class="img-hero">
+      <div class="hero-text color-bg--coral unit size1of2">
+        <h1>this is a headline about a possible project of the colab.</h1>
+      </div>
+    </div>
+  </div>
+  <div class="divider-sg--v"></div>
+  <!-- /Hero Header -->
+
+
+
+  <!-- Tiles -->
+  <div class="container">
+    <div class="line">
+      <div class="lastUnit size1of1">
+        <h1 id="tiles" class="u-align--center">Tiles</h1>
+
+        <!-- Standard Tile -->
+        <hr>
+        <h4>Code For: Standard Tiles</h4>
+        <p>Standard tiles are used as a type of snapshot/synposis for the page viewer. Viewers can peruse standard tiles to get a high level sense of things.</p>
+        <p>You create a standard tile by adding the <code>.tile</code> and <code>.standard-tile</code> classes to a <code>div</code> element.</p>
+        <p><strong>Note about width:</strong> The <code>.standard-tile</code> will fill the width of its parent container.</p>
+        <xmp class="code">
+  <div class="line">
+    <div class="lastGroup">
+
+      <!-- First Tile -->
+      <div class="unit size1of3">
+        <div class="tile standard-tile">
+          <img class="img-tile">
+          <div class="text-container">
+            <h3>Header A</h3>
+            <p>Some descriptive text about a thing here.</p>
+            <button>Act Now!</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Second Tile -->
+      <div class="unit size1of3">
+        <div class="tile standard-tile">
+          <img class="img-tile">
+          <div class="text-container">
+            <h3>Header B</h3>
+            <p>Some descriptive text about a thing here with a text only button.</p>
+            <button class="text-only">Text-only button!</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Third Tile -->
+      <div class="lastUnit size1of3">
+        <div class="tile standard-tile">
+          <img class="img-tile">
+          <div class="text-container">
+            <h3>Header C</h3>
+            <p>Some more descriptive text about another thing.</p>
+            <button>Click here</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+        </xmp>
+        <h4>What the above code does...</h4>
+        <div class="line">
+          <div class="lastGroup">
+            <div class="unit size1of3">
+              <div class="tile standard-tile">
+                <img class="img-tile">
+                <div class="text-container">
+                  <h3>Header A</h3>
+                  <p>Some descriptive text about a thing here.</p>
+                  <button>Act Now!</button>
+                </div>
+              </div>
+            </div>
+            <div class="unit size1of3">
+              <div class="tile standard-tile">
+                <img class="img-tile">
+                <div class="text-container">
+                  <h3>Header B</h3>
+                  <p>Some descriptive text about a thing here with a text only button.</p>
+                  <button class="text-only">Text-only button!</button>
+                </div>
+              </div>
+            </div>
+            <div class="lastUnit size1of3">
+              <div class="tile standard-tile">
+                <img class="img-tile">
+                <div class="text-container">
+                  <h3>Header C</h3>
+                  <p>Some more descriptive text about another thing.</p>
+                  <button>Click here</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /Standard Tiles -->
+
+
+        <!-- Project Tiles -->
+        <hr>
+        <h4>Code For: Project Tiles</h4>
+        <p>Project tiles are used to highlight projects and the like for the viewer.</p>
+        <p>You create a prject tile by adding the <code>.tile</code> and <code>.project-tile</code> classes to a <code>div</code> element.</p>
+        <p><strong>Note about width:</strong> The <code>.project-tile</code> will fill the width of its parent container.</p>
+        <xmp class="code">
+  <div class="lastGroup">
+    <div class="unit size1of2">
+      <div class="tile project-tile">
+        <img class="triangles">
+        <div class="text-container">
+          <h1>Project Header</h1>
+          <p>
+            A paragraph (from the Greek paragraphos, "to write
+            beside" or "written beside") is a self-contained unit of a
+            discourse in writing dealing with a particular point or
+            idea. A paragraph consists of one or more sentences.
+            Though not required by the syntax of any language,
+            paragraphs are usually an expected part of formal
+            writing, used to organize longer prose.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+        </xmp>
+        <h4>What the above code does...</h4>
+        <div class="line">
+          <div class="lastGroup">
+            <div class="unit size1of2">
+              <div class="tile project-tile">
+                <img class="triangles">
+                <div class="text-container">
+                  <h1>Project Header</h1>
+                  <p>A paragraph (from the Greek paragraphos, "to write beside" or "written beside") is a self-contained unit of a discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences. Though not required by the syntax of any language, paragraphs are usually an expected part of formal writing, used to organize longer prose.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /Project Tiles -->
+
+      </div>
+    </div>
+  </div>
+  <div class="divider-sg--v"></div>
+  <!-- /Tiles -->
 
 </body>
 </html>

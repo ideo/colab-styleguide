@@ -151,6 +151,8 @@ button + button,
 
 button.text-only,
 .button.text-only {
+  padding-left: 0px;
+  padding-right: 0px;
   background-color: transparent;
   color: #f37021;
 }
